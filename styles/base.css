@@ -87,6 +87,10 @@ aside {
     border: lightgrey solid;
     padding: 20px;
     border-radius: 1rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 h2, footer {
@@ -145,13 +149,6 @@ h4 {
     grid-column: 1/2;
     grid-row: 5/6;
     font-style: italic;
-}
-
-aside {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
 }
 
 aside ul {
