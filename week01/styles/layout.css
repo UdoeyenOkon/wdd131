@@ -9,7 +9,7 @@ body {
     height: 100vh;}
 
 header {
-    background: lightgray;
+    background: white;
     padding: 2rem;
     grid-column: 1/4;
     grid-row: 1/2
@@ -40,6 +40,10 @@ footer {
 h1 {
     text-align: center;
     padding: 0.5rem;
+    border: red solid;
+    color: #eee;
+    background-color: rgb(96, 96, 173);
+
 }
 
 nav {
