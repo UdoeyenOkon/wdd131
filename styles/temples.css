@@ -26,7 +26,7 @@ footer {
 
 header,
 footer {
-    background-color: rgb(222, 241, 185);
+    background-color: rgb(194, 211, 166);
 }
 
 header {
@@ -53,12 +53,12 @@ nav {
     display: none;
     text-decoration: none;
     padding: 0.25rem;
-    color: #00eaff;
+    color: black;
 }
 
 .navigation a:hover {
     background: yellow;
-    color: black;
+    color: rgb(33, 31, 31);
 }
 
 #menu {
