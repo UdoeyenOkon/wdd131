@@ -37,6 +37,7 @@ header {
 
 nav {
     margin: 1rem auto;
+    display: flex;
 }
 
 /* small view navigation */
