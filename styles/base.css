@@ -119,6 +119,9 @@ h2, footer {
 
 .about-me img {
     grid-column: 3/4;
+    width: 100%;
+    height: auto;
+    }
 }
 
 .my-origin {
