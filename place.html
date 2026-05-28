@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Project</title>
+    <meta name="description" content="Designing a responsive web page of my country Nigeria">
+    <meta name="author" content="Udoeyen Aniefiok Okon">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=News+Cycle:wght@700&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/zuma-rock-large.webp" media="(min-width=1500)">
+                <source srcset="images/zuma-rock-medium.webp" media="(min-width=1000)">
+                <source srcset="images/zuma-rock-small.webp" media="(min-width=500)">
+                <img src="images/zuma-rock-large.webp" alt="Nigerian Zuma Rock" width="1500" height="1000">
+            </picture>
+        </div>
+
+        <div class="data">
+            <h2 class="data-heading">Data</h2>
+            <div class="data-entry">
+                <p class="label"><strong>Area:</strong></p>
+                <p class="value">923,768 sq.km</p>
+            </div>
+    
+            <div class="data-entry">
+                <p class="label"><strong>Population:</strong></p>
+                <p class="value">232.7 million</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Capital:</strong></p>
+                <p class="value">Abuja</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Official Language:</strong></p>
+                <p class="value">English</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Currency:</strong></p>
+                <p class="value">Nigerian Naira (NGN)</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Time Zone:</strong></p>
+                <p class="value">WAT (UTC + 1 HRS)</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Call Code:</strong></p>
+                <p class="value">+234</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Internet TLD:</strong></p>
+                <p class="value">.ng</p>
+            </div>
+        </div>
+
+        <div class="weather">
+            <h2>Weather <span id="weather-icon"><img src="images/brightness-alt-high.svg" alt="weather-icon"></span>
+            </h2>
+            <div class="data-entry">
+                <p class="label"><strong>Temperature:</strong></p>
+                <p class="value" id="temp">28 °C</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Condition:</strong></p>
+                <p class="value" id="weather-condition">Sunny</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Wind Speed:</strong></p>
+                <p class="value" id="wind-speed">8.0 km/hr</p>
+            </div>
+
+            <div class="data-entry">
+                <p class="label"><strong>Wind Chill:</strong></p>
+                <p class="value" id="wind-chill"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="CurrentYear"></span> | Udoeyen OKON | Nigeria</p>
+        <p class="modified">Last Modified: <span id="LastModified"></span></p>
+    </footer>
+</body>
+
+</html>
