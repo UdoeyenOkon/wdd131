@@ -56,7 +56,6 @@ footer {
 
 .data-entry {
     box-sizing: border-box;
-    border-bottom: 1px solid brown;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
