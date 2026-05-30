@@ -1,0 +1,38 @@
+
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+header, h1,
+footer {
+    background-color: rgb(194, 211, 166);
+    text-align: center;
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: red;
+    }
+
+img {
+    border-radius: 15px;
+    padding: 10px;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+        100% {
+            opacity: 1;
+        }
+}
