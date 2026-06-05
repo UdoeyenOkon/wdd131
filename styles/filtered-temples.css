@@ -1,0 +1,130 @@
+body {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+header,
+footer {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 5px;
+    /* background-color: rgb(11, 193, 157); */
+    /* color: black; */
+}
+
+header,
+footer {
+    background-color: rgb(194, 211, 166);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    padding-left: 50px;
+    font-size: larger;
+}
+
+nav {
+    margin: 1rem auto;
+    display: flex;
+}
+
+/* small view navigation */
+.navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.navigation a {
+    text-align: center;
+    display: none;
+    text-decoration: none;
+    padding: 0.25rem;
+    color: black;
+}
+
+.navigation a:hover {
+    background: yellow;
+    color: rgb(33, 31, 31);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+
+/* .active {
+    color: rgb(0, 255, 153);
+} */
+
+/* when the button is clicked, the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid brown;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+section img {
+    box-shadow: 0 4px 8px rgba(231, 125, 19, 0.5);
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+h2,
+figure,
+figcaption {
+    margin: 0 auto;
+}
+
+ .label {
+    font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style:italic;
+       
+}

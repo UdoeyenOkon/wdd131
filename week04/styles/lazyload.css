@@ -2,7 +2,7 @@
 header,
 main,
 footer {
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
     border: 1px solid lightgray;
     padding: 15px;
@@ -22,6 +22,7 @@ picture {
     }
 
 img {
+    width: 100%;
     border-radius: 15px;
     padding: 10px;
     animation: fade 10s;
@@ -35,4 +36,8 @@ img {
         100% {
             opacity: 1;
         }
+}
+
+h1 {
+    padding: 20px;
 }
