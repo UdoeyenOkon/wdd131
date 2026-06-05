@@ -1,8 +1,5 @@
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     header {
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between; */
         background-color: rgb(40, 36, 36);
         color: white;
     }
@@ -24,6 +21,5 @@
 
     #menu {
         display: none;
-        /*hides hamburger button*/
     }
 }
