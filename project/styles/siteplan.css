@@ -48,21 +48,14 @@ section {
     padding: 5px;
     margin: 10px;    
 }
-.small img {
+.small img, .large img {
     max-width: 100%;
-    width: 500px;
-    height: 750px;
+    height: auto;
+
 }
 
 .large, .small {
    padding: 10px;
    margin: 15px;
-}
-
-
-.large img {
-    max-width: 100%;
-    width: 1000px;
-    height: 1500px;
 }
 
