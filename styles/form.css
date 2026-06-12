@@ -9,7 +9,6 @@ body {
     font-style: normal;
     width: 100%;
     max-width: 600px;
-
 }
 
 header,
@@ -18,21 +17,17 @@ footer {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-}
-
-header,
-footer {
     background-color: #191f24;
     padding: 10px;
     color: #e4d8d8;
     margin: 10px 0;
 }
 
+
 #r {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
-
 }
 
 .heading,
@@ -105,4 +100,10 @@ span {
 img {
     max-width: 100%;
     height: auto;
+}
+
+@media (min-width: 600px) {
+body {
+        width: 100%;
+    }
 }
