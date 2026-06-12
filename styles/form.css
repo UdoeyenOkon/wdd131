@@ -1,0 +1,108 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+header,
+footer {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #191f24;
+    padding: 10px;
+    color: #e4d8d8;
+    margin: 10px 0;
+}
+
+#r {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+}
+
+.heading,
+label {
+    padding-top: 1rem;
+    color: #5e1403;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 600px;
+    appearance: none;
+}
+
+main {
+    border: 1px solid brown;
+    background: #d9d4d5;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 600px;
+    margin: 1rem 2% 2rem;
+}
+
+select:required,
+input:required {
+    border-bottom: solid 8px red;
+}
+
+select:required:valid,
+input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+input[type="submit"]:hover {
+    background: yellowgreen;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.checkbox label {
+    color: black;
+}
+
+span {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

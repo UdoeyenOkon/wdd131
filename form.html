@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Responsive form that complies with best practices.">
+    <meta name="author" content="Udoeyen Aniefiok Okon">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=News+Cycle:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p>Product Review</p>
+    </header>
+
+    <main>
+        <form action="review.html" method="get" class="prform">
+
+            <div>
+                <label for="product">Product Name*</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                </select>
+            </div>
+
+            <div class="heading">Overall Rating *</div>
+            <div id="r">
+                <section class="radio">
+                    <div>
+                        <label for="1-star">☆</label>
+                    </div>
+                    <input type="radio" id="1-star" name="rating" required>
+                </section>
+                <section>
+                    <div>
+                        <label for="2-star">☆☆</label>
+                    </div>
+                    <input type="radio" id="2-star" name="rating" required>
+                </section>
+                <section>
+                    <div>
+                        <label for="3-star">☆☆☆</label>
+                    </div>
+                    <input type="radio" id="3-star" name="rating" required>
+                </section>
+                <section>
+                    <div>
+                        <label for="4-star">☆☆☆☆</label>
+                    </div>
+                    <input type="radio" id="4-star" name="rating" required>
+                </section>
+                <section>
+                    <div>
+                        <label for="5-star">☆☆☆☆☆</label>
+                    </div>
+                    <input type="radio" id="5-star" name="rating" required>
+                </section>
+            </div>
+
+            <div>
+            <label>Date of Installation*<input type="date" id="date" name="InstallationDate" required></label>
+            </div>
+
+            <div class="heading">Which features did you find useful in the product?<br><span>(Check all that apply)</span></div>
+            <div class="checkbox">
+            <label><input type="checkbox" id="checkbox" value="check" name="quality">High quality</label>
+            <label><input type="checkbox" id="checkbox" value="check" name="durable">Highly durable</label>
+            <label><input type="checkbox" id="checkbox" value="check" name="portable">It is portable</label>
+            <label><input type="checkbox" id="checkbox" value="check" name="sustainable">It is recycleable</label>
+            </div>
+
+            <div>
+            <label>Written Review (Optional)<textarea name="review" id="review"></textarea></label>
+            </div>
+
+            <div>
+            <label>Your Name (Optional)<input type="text" id="name" name="name"></label>
+            </div>
+           
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p> &copy;<span id="CurrentYear"></span> | Udoeyen OKON | Nigeria</p>
+        <p class="modified">Last Modified: <span id="LastModified"></span></p>
+    </footer>
+</body>
+
+</html>
