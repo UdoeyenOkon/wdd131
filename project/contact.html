@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Kaevikon Ventures</title>
+    <meta name="description" content="Designing a responsive web page for Kaevikon Construction Company">
+    <meta name="author" content="Udoeyen Aniefiok Okon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=News+Cycle:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/buildings.svg" alt="logo"> 
+
+            <h1>kaevikon Ventures</h1>
+        </div>
+
+        
+
+        <button id="menu">Menu</button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">About Us</a></li>
+                <li><a href="contact.html" id="Contact">Contact Us</a></li>
+                <li><a href="#" id="projects">Projects/Equipment</a></li>
+                <li><a href="#" id="Prices">Price List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main .contact>
+        <h2>Enquiry Form</h2>
+        <p><span id="note">(Fields with (*) are required)</span></p>
+        
+
+        <form action="enquiry.html" method="get" class="enq-form">
+        
+            <div>
+                <label for="service">Service Required*</label>
+                <select name="service" id="service" required>
+                    <option value="" disabled selected>Select the Service Required... &#9662;</option>
+                </select>
+            </div>
+        
+                   
+            <div>
+                <label for="date">Date Service is Required*<input type="date" id="date" name="service dateDate" required></label>
+            </div>
+               
+            <div>
+                <label for="details">Do you have questions or need clearifications? (Optional)<textarea name="details" id="details"></textarea></label>
+            </div>
+        
+            <div>
+                <label for="name">Your Name (Optional)<input type="text" id="name" name="name"></label>
+            </div>
+
+            <div>
+                <label for="email">Your Contact Email Address (Optional)<input type="email" id="email" name="email"></label>
+            </div>
+
+            <div>
+                <label for="telephone">Your Contact Telephone Number (Optional)<input type="tel" id="telephone" name="telephone"></label>
+            </div>
+        
+            <input type="submit" value="Resquest for Information">
+        
+        </form>
+    </main>
+        
+    <footer>
+        <div>
+            <h3>Contact:</h3>
+            <p>152, Ekpri Nsukara road,</p>
+            <p>Uyo-Akwa Ibom State</p>
+            <p><span>Telephone:</span>+234 803 675 0522</p>
+            <p><span>Email:</span>okonudoeyen@gmail.com</p>            
+        </div>
+
+        <div class="social-media">
+            <a href="https://web.facebook.com/login/"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://x.com/twitt_login?lang=en"><img src="images/twitter-x.svg" alt="Twitter twitter-x"></a>
+            <a href="https://www.linkedin.com/in/udoeyen-okon-a13135124/"><img src="images/linkedin.svg" alt="linkedin"></a>
+            
+        </div>
+
+        <div>
+            <p>©<span id="CurrentYear"></span> | Udoeyen OKON | Nigeria</p>
+            <p class="modified">Last Modified: <span id="LastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

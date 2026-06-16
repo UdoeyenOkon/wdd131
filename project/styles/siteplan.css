@@ -1,6 +1,7 @@
 :root {
     --primary-color: #D9D4D5;
     --secondary-color: #191f24;
+    --testing: #efefef;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
 main {
     width: 100%;
     background-color: var(--primary-color);
-    color: #282525;
+    color: #161313;
 }
 
 h1,
@@ -31,7 +32,7 @@ footer {
     text-align: center;
     background-color: var(--secondary-color);
     padding: 5px;
-    color: #e4d8d8;
+    color: #f5f0f0;
 }
 
 header,
@@ -46,16 +47,18 @@ footer {
 section {
     border: 1px solid rgb(189, 159, 159);
     padding: 5px;
-    margin: 10px;    
+    margin: 10px;
 }
-.small img, .large img {
+
+.small img,
+.large img {
     max-width: 100%;
     height: auto;
 
 }
 
-.large, .small {
-   padding: 10px;
-   margin: 15px;
+.large,
+.small {
+    padding: 10px;
+    margin: 15px;
 }
-

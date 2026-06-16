@@ -3,7 +3,6 @@ const year = document.getElementById("CurrentYear").innerHTML = `${today.getFull
 const day = document.getElementById("LastModified").innerHTML = `${new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "medium" }).format(today)}`;
 
 
-
 // const reviewsDisplay = document.querySelector();
 let numReviews = (window.localStorage.getItem("numReviews-Is")) || 0;
 
