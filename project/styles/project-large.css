@@ -13,24 +13,17 @@
         flex: 1 1 100%;
         color: white;
         padding: 15px;
-      }
-
-    /* .pictures {
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
+    }
 
     #menu {
         display: none;
     }
 
     .highlight {
-        position: absolute;
-        top: 300px;
-        left: 150px;
         font-size: xx-large;
     }
 
-    .details{
+    .details {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -40,20 +33,20 @@
         grid-row: 1/2;
     }
 
-        .button {
-            grid-column: span 2;
-            grid-row: 2/3;
-        }
-  
+    .button {
+        grid-column: span 2;
+        grid-row: 2/3;
+    }
+
 
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .social-media {
         display: grid;
     }
 
-  
-}
 
+}

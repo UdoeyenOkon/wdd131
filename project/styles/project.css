@@ -101,14 +101,14 @@ nav {
 .hero img {
     max-width: 100%;
     height: auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .highlight {
     position: absolute;
-    top: 260px;
-    left: 10px;
-    font-size: large;
+    top: 6%;
+    left: 1%;
+    font-size: small;
 }
 
 section {
