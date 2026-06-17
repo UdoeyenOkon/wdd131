@@ -1,0 +1,220 @@
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
+});
+
+
+
+const today = new Date();
+const year = document.getElementById("CurrentYear").innerHTML = `${today.getFullYear()}`;
+const day = document.getElementById("LastModified").innerHTML = `${new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "medium" }).format(today)}`;
+
+
+const projects = [
+    {
+        name: "Doctor Quarters for Akwa Ibom State",
+        details: "Rehabilitation of 15 units, 5-bedroom duple",
+        servicesProvided: "Reconstruction",
+        yearCompletedOrAcquired: 2022,
+        image: "Condition Survey",
+        imageUrl: "images/condition-survey-doctors-quarters-akwa-ibom-state.webp"
+    },
+    {
+        name: "Doctor Quarters for Akwa Ibom State",
+        details: "Rehabilitation of 15 units, 5-bedroom duple",
+        servicesProvided: "Reconstruction",
+        yearCompletedOrAcquired: 2022,
+        image: "Completed Work",
+        imageUrl: "images/rehabilitation-doctors-quarters-akwa-ibom-state.webp"
+    },
+    {
+        name: "Generator House, Old Governor Office",
+        details: "Rehabilitation of the Shell and Roof",
+        servicesProvided: "Renovation",
+        yearCompletedOrAcquired: 2023,
+        image: "Condition Survey",
+        imageUrl: "images/condition-survey-gen-house-old-gov-office-akwa-ibom-state.webp"
+    },
+    {
+        name: "Generator House, Old Governor Office",
+        details: "Rehabilitation of the Shell and Roof",
+        servicesProvided: "Renovation",
+        yearCompletedOrAcquired: 2023,
+        image: "Completed Work",
+        imageUrl: "images/rehabilitation-gen-house-old-gov-office-akwa-ibom-state.webp"
+    },
+    {
+        name: "Governor Office Annex Complex",
+        details: "Rehabilitation of the Shell and Roof",
+        servicesProvided: "Rehabilitation",
+        yearCompletedOrAcquired: 2020,
+        image: "Condition Survey",
+        imageUrl: "images/condition-survey-gov-office-annex-akwa-ibom-state.webp"
+    },
+    {
+        name: "Governor Office Annex Complex",
+        details: "Rehabilitation of the Shell and Roof",
+        servicesProvided: "Rehabilitation",
+        yearCompletedOrAcquired: 2020,
+        image: "Completed Work",
+        imageUrl: "images/rehabilitation-gov-office-annex-akwa-ibom-state.webp"
+    },
+
+    {
+        name: "Hotel Suites for Majesty Realm Hotel, Uyo",
+        details: "Construction of a 10-suite complex (infrastructure including concrete paved floor, landscaping, Water supply, and inverter system)",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2021,
+        image: "Completed Work",
+        imageUrl: "images/hotel-suites-building-majestyrealm.webp"
+    },
+    {
+        name: "Hotel Rooms for Majesty Realm Hotel, Uyo",
+        details: "Construction of a 9-room, Gym, and Restaurant",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2021,
+        image: "Completed Work",
+        imageUrl: "images/hotelrooms-building-majestyrealm.webp"
+    },
+    {
+        name: "Block of Flats for a private client, Uyo",
+        details: "Construction of 2 blocks of 4nr 3-bedroom flats (infrastructure including Fence, Gate/generator House, concrete paved floor, landscaping, Water supply, and inverter system)",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2018,
+        image: "Completed Work",
+        imageUrl: "images/housing-estate-majesty-realm.webp"
+    },
+    {
+        name: "Residential Mansion for a private client, Uyo",
+        details: "Construction of a 7-bedroom duplex/penthouse complex (infrastructure including Gate House, Fence, Service Quarters, generator House, concrete paved floor, landscaping, Water supply, and inverter system)",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2015,
+        image: "Completed Work",
+        imageUrl: "images/mansion-development-idu-uruan.webp"
+    },
+    {
+        name: "Residential Mansion for a private client, Essien Udim",
+        details: "Construction of a 10-bedroom duplex/penthouse complex (infrastructure including concrete paved floor, landscaping, Water supply, and inverter system)",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2019,
+        image: "Completed Work",
+        imageUrl: "images/mansion-development-private-mkpatak.webp"
+    },
+    {
+        name: "Security / Plant House for a private client, Essien Udim",
+        details: "Construction of a 1-storey, 2nr 1-bedroom self-contained /plant room building (with inverter system)",
+        servicesProvided: "Design and Build",
+        yearCompletedOrAcquired: 2019,
+        image: "Completed Work",
+        imageUrl: "images/infrastructure-development-private-mkpatak.webp"
+    },
+    {
+        name: "Affordable Housing Estate",
+        details: "Construction of 236 units of 2-bedroom Flats (infrastructure including Fence/Gatehouse, concrete paved roads and drainage, landscaping, Water supply, and public power installation)",
+        servicesProvided: "Project Management / Contract Administration",
+        yearCompletedOrAcquired: 2023,
+        image: "Arial View",
+        imageUrl: "images/mass-housing-estate-akwa-ibom-state.webp"
+    },
+    {
+        name: "Affordable Housing Estate",
+        details: "Construction of 236 units of 2-bedroom Flats (infrastructure including Fence/Gatehouse, concrete paved roads and drainage, landscaping, Water supply, and public power installation)",
+        servicesProvided: "Project Management / Contract Administration",
+        yearCompletedOrAcquired: 2023,
+        image: "Completed work",
+        imageUrl: "images/mass-housing-estate-akwa-ibom-state-2.webp"
+    },
+    {
+        name: "Big-Mixer",
+        details: "Capacity of up to 1 bag, self-loaded, and delivers mixed concrete up to the 10th floor with a pulley system.",
+        servicesProvided: "Not Applicable",
+        yearCompletedOrAcquired: "",
+        image: "Equipment in action",
+        imageUrl: "images/big-tower-mixer.webp"
+    },
+    {
+        name: "Small-Mixer",
+        details: "Capacity of up to 1 bag, labour loaded",
+        servicesProvided: "Not Applicable",
+        yearCompletedOrAcquired: "",
+        image: "Equipment in the yard",
+        imageUrl: "images/small-size-mixer.webp"
+    },
+    {
+        name: "Small Roller Compactor",
+        details: "2-steel drums, suitable for compacting building and road works",
+        servicesProvided: "Not Applicable",
+        yearCompletedOrAcquired: "",
+        image: "Equipment in action",
+        imageUrl: "images/small-roller-compactor.webp"
+    },
+    {
+        name: "Scaffolding",
+        details: "Independent steel scaffolding, suitable for internal and external uses.",
+        servicesProvided: "Not Applicable",
+        yearCompletedOrAcquired: "",
+        image: "Equipment in the yard",
+        imageUrl: "images/scaffolding.webp"
+    },
+];
+
+createProjectAlbum(projects);
+
+const projectsAndEquipmentLink = document.querySelector("#projects-equipment");
+projectsAndEquipmentLink.addEventListener("click", () => {
+    document.querySelector(".photos").innerHTML = "";
+    createProjectAlbum(projects);
+});
+
+const projectsLink = document.querySelector("#construction");
+projectsLink.addEventListener("click", () => {
+    document.querySelector(".photos").innerHTML = "";
+    const projectOnly = projects.filter(project => project.servicesProvided !== "Not Applicable");
+    createProjectAlbum(projectOnly);
+});
+
+const equipmentLink = document.querySelector("#equipment");
+equipmentLink.addEventListener("click", () => {
+    document.querySelector(".photos").innerHTML = "";
+    const equipmentOnly = projects.filter(project => project.servicesProvided === "Not Applicable");
+    createProjectAlbum(equipmentOnly);
+});
+
+function createProjectAlbum(projectsToShow) {
+    projectsToShow.forEach(project => {
+        let album = document.createElement("section");
+        let name = document.createElement("h3");
+        let details = document.createElement("p");
+        let serviceProvided = document.createElement("p");
+        let yearCompletedOrAcquired = document.createElement("p");
+        let image = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = project.name;
+        details.innerHTML = `<span class="label"> <strong>Details: </strong></span>${project.details}`;
+        serviceProvided.innerHTML = `<span class="label"> <strong>Srvice Provided: </strong></span>${project.servicesProvided}`;
+        yearCompletedOrAcquired.innerHTML = `<span class="label"> <strong>Year Completed or Acquired: </strong></span>${project.yearCompletedOrAcquired}`;
+        image.innerHTML = `<span class="label"> <strong>Image Description: </strong></span>${project.image}`;
+        img.setAttribute("src", project.imageUrl);
+        img.setAttribute("alt", project.name);
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "500");
+        img.setAttribute("height", "375");
+
+        album.appendChild(name);
+        album.appendChild(details);
+        album.appendChild(serviceProvided);
+        album.appendChild(yearCompletedOrAcquired);
+        album.appendChild(image);
+        album.appendChild(img);
+
+        document.querySelector(".photos").appendChild(album);
+    });
+}
+
+
+
+

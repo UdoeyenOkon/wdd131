@@ -29,9 +29,10 @@ footer {
     font-family: "Marcellus", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    text-align: e;
     background-color: var(--secondary-color);
     color: #f5f0f0;
+    text-align: center;
 }
 
 header,
@@ -52,7 +53,7 @@ nav {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    color: #be1515;
+    /* color: #be1515; */
     margin: 1rem auto;
 }
 
@@ -112,9 +113,13 @@ nav {
 }
 
 section {
-    text-align: center;
+    text-align: start;
     margin: 5px;
     padding: 10px;
+}
+
+h2 {
+    text-align: center;
 }
 
 .offer a {
@@ -198,4 +203,38 @@ input[type="submit"]:hover {
 
 #note {
     font-style: italic;
+}
+
+
+/* Project Album */
+.album-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.album-nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    color: #9c1818;
+}
+
+.album-nav a:hover {
+    background: yellow;
+    color: rgb(33, 31, 31);
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem
+}
+
+section img {
+    box-shadow: 0 4px 8px rgba(231, 125, 19, 0.5);
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }

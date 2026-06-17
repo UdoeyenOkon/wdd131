@@ -48,5 +48,10 @@
         display: grid;
     }
 
+    /* Project Album */
+
+    .photos{
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
