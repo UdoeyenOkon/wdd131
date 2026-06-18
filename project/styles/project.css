@@ -88,6 +88,11 @@ nav {
     content: "❌";
 }
 
+.about p {
+    margin-bottom: 1em;
+    /* text-indent: 2em; */
+}
+
 
 /* when the button is clicked, the open class is toggled (added/removed) */
 .open a {
