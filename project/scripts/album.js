@@ -16,7 +16,7 @@ const day = document.getElementById("LastModified").innerHTML = `${new Intl.Date
 const projects = [
     {
         name: "Doctor Quarters for Akwa Ibom State",
-        details: "Rehabilitation of 15 units, 5-bedroom duple",
+        details: "Rehabilitation of 15 units, 5-bedroom duplex",
         servicesProvided: "Reconstruction",
         yearCompletedOrAcquired: 2022,
         image: "Condition Survey",
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "Doctor Quarters for Akwa Ibom State",
-        details: "Rehabilitation of 15 units, 5-bedroom duple",
+        details: "Rehabilitation of 15 units, 5-bedroom duplex",
         servicesProvided: "Reconstruction",
         yearCompletedOrAcquired: 2022,
         image: "Completed Work",
