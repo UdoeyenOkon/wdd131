@@ -145,6 +145,10 @@ h2 {
     color: rgb(33, 31, 31);
 }
 
+.social-media img {
+    width: -10%;
+}
+
 /* form */
 .heading,
 label {
@@ -201,7 +205,8 @@ input[type="submit"]:hover {
     background: yellowgreen;
 }
 
-#note {
+#note,
+.note2 {
     font-style: italic;
 }
 
@@ -218,7 +223,7 @@ input[type="submit"]:hover {
     text-align: center;
     text-decoration: none;
     padding: 2px;
-    color: #9c1818;
+    color: hsl(0, 80%, 27%);
 }
 
 .album-nav a:hover {
@@ -237,4 +242,47 @@ section img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+/* table */
+
+table {
+    margin: 10px auto;
+    border: thin solid rgb(209, 116, 116);
+    box-shadow: 0 0 5px green;
+    border-collapse: collapse;
+    width: 90%;
+    /* or max-width: 800px; */
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+    font-size: 1rem;
+}
+
+tr:first-child th {
+    background-color: var(--secondary-color);
+    color: var(--testing);
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+th {
+    background-color: rgb(189, 168, 168);
+    font-size: larger;
+}
+
+td,
+th[scope="col"] {
+    text-align: start;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(230, 221, 221);
+    ;
 }

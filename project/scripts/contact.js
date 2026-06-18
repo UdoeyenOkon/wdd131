@@ -15,14 +15,14 @@ const day = document.getElementById("LastModified").innerHTML = `${new Intl.Date
 
 
 const services = [
-    { id: "DB", name: "Design and Build" },
+    { id: "ArB", name: "Arbitration" },
     { id: "CONT", name: "Construction Contract" },
+    { id: "CA", name: "Contract Administration" },
+    { id: "DB", name: "Design and Build" },
+    { id: "EQP", name: "Eqipment Hire" },
+    { id: "INT", name: "Internship" },
     { id: "PM", name: "Project Management" },
     { id: "QS", name: "Quantity Surveying" },
-    { id: "CA", name: "Contract Administration" },
-    { id: "ArB", name: "Arbitration" },
-    { id: "INT", name: "Internship" },
-    { id: "EQP", name: "Eqipment Hire" },
 ];
 
 const selectService = document.getElementById("service");
