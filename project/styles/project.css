@@ -150,7 +150,6 @@ h2 {
 }
 
 /* form */
-.heading,
 label {
     padding-top: 1rem;
     color: #5e1403;
@@ -208,6 +207,10 @@ input[type="submit"]:hover {
 #note,
 .note2 {
     font-style: italic;
+}
+
+.contact h2 {
+    text-align: start;
 }
 
 
