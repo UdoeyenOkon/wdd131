@@ -29,7 +29,7 @@ footer {
     font-family: "Marcellus", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: e;
+    /* text-align:end; */
     background-color: var(--secondary-color);
     color: #f5f0f0;
     text-align: center;
@@ -70,6 +70,38 @@ nav {
     color: rgb(33, 31, 31);
 }
 
+
+.navigation-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem auto;
+    justify-content: space-evenly;
+
+}
+
+.bottom {
+    background-color: var(--secondary-color);
+}
+
+.navigation-bottom a {
+    display: block;
+    flex: 1 1 100%;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+.navigation-bottom li {
+    list-style: none;
+}
+
+.navigation-bottom a:hover {
+    background: yellow;
+    color: rgb(33, 31, 31);
+}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -88,15 +120,17 @@ nav {
     content: "❌";
 }
 
-.about p {
-    margin-bottom: 1em;
-    /* text-indent: 2em; */
-}
+
 
 
 /* when the button is clicked, the open class is toggled (added/removed) */
 .open a {
     display: block;
+}
+
+.about p {
+    margin-bottom: 1em;
+    /* text-indent: 2em; */
 }
 
 .hero {

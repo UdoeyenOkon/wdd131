@@ -13,7 +13,7 @@ const products = [
 const selectProduct = document.getElementById("product");
 
 products.forEach((product) => {
-    let option = document.createElement("option")
+    let option = document.createElement("option");
     option.textContent = product.name;
     option.value = product.id;
     // document.getElementById("product").appendChild(option);
